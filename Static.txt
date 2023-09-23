@@ -1,0 +1,14 @@
+void main()
+{
+  print(con.h);
+  con.getval();
+}
+//static is used to usse class without creating object
+class con{
+  static String h="hello";
+  static void getval()
+  {
+    print("hello");
+  }
+  
+}

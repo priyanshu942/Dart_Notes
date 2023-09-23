@@ -1,0 +1,21 @@
+void main()
+{
+ final b=Animal();
+  b.fn();
+ 
+ }
+
+mixin jump{
+  int j=10;
+}
+
+mixin run{
+  int k=20;
+}
+
+class Animal with jump,run{
+  void fn()
+  {
+    print(j);
+  }
+}

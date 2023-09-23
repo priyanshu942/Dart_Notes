@@ -1,0 +1,81 @@
+void main()
+{
+  Vech a=Vech();
+  car b=car();
+  print(a.engine);
+  a.acc();
+  b.acc();
+  
+}
+//static is used to usse class without creating object
+class Vech{
+  bool engine=false;
+  bool brake=true;
+  int speed=20;
+  void acc()
+  {
+    speed=speed+10;
+    print(speed);
+  }
+}
+
+class car extends Vech{
+  int nofwheels=4;
+  void printw()
+  {
+    print(nofwheels);
+  }
+  @override
+  void acc()
+  {
+    speed=speed+20;
+    print(speed);
+  }
+  
+}
+
+//implements+extends
+
+
+
+
+void main()
+{
+  
+ car a=new car();
+  a.ptn();
+}
+
+class Vech{
+  bool isengine=true;
+  bool engine=true;
+  int nofwheels=10;
+  
+  void accelerate(){
+    print("accelerate");
+  }
+}
+
+class oth{
+  void ptn()
+  {
+    print("Here");
+  }
+}
+class car extends oth implements Vech{
+  @override
+  bool isengine=true;
+   @override
+ bool engine=true;
+   @override
+   int nofwheels=4;
+  @override
+  void accelerate(){
+    print("accelerate");
+  }
+  
+  void prt()
+  {
+    print("oh");
+  }
+}

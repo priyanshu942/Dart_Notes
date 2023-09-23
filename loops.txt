@@ -1,0 +1,21 @@
+void main()
+{
+  for(int i=0;i<10;i++)
+  {
+    print("${i}");
+    
+  }
+  
+  String s="hello";
+  for(int i=0;i<s.length;i++)
+  {
+    print(s[i]);
+  }
+  int i=0;
+  while(i<10)
+  {
+    print(i);
+    i++;
+  }
+ 
+}

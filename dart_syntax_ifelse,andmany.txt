@@ -1,0 +1,51 @@
+void main() {
+  //commets
+  //we can use var or int for variable
+  dynamic i=3;
+  print("${i+2}");
+  //dynamic key word is used to put any value
+  //it behaves like var in kotlin
+  print('''
+  hello
+  
+  
+  k''');//multiLine string
+  //var,final,const
+  var a="hello12";//it identify right hand side
+  
+    print(a);
+  
+  int? q=null;//? to show it can have null values 
+
+//else if
+  int r=25;
+ 
+if(r>16) {
+  print("19");
+}
+else if(r<20)
+{
+  print(">20");
+}
+else{
+  print("nun");
+}
+  //|| OR,&& and
+  // switch no need for break when it is not empty
+  //if empty put break
+  int ch=2;
+  int age =20;
+  switch(ch)
+  {
+    case 1 when age>20:
+      print(1);
+     
+      
+    case 2:
+      print( 2);
+      
+    default:
+      print(44);
+  }
+}
+

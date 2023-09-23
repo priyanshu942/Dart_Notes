@@ -1,0 +1,44 @@
+void main()
+{
+  
+ printn(1,1);
+  var a=pt();
+  print(a);
+  //acces particular
+  print(a.$1);
+  var (ag,n)=pt();
+  print(n);
+  ptn(name:"a",a:5);
+  //returnig a function
+  var fun=pprint();
+  print(fun());
+  hel();
+}
+
+//required
+void ptn({required String name,required int a})
+{
+  print(name);
+}
+//using parameters
+void printn(int a,int d)
+{
+  print("hello");
+}
+// return 2 datatypes
+(int,String) pt()
+{
+  return (1,"Ram");
+}
+
+Function pprint()
+{
+  return()
+  {
+    print('yoo');
+  };
+}
+
+//arrow function
+void hel()=>print("yelo");
+// datatype functionname

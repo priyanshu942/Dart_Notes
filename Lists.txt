@@ -1,0 +1,14 @@
+void main()
+{
+ 
+ List list=[10,20,30,"hello",true];
+  print(list[0]);
+  
+  List<int> li=[1,2,3];
+  var a=Student<String>("pri");
+  print(a.name);
+}
+class Student<T>{
+  final T name;
+  Student(this.name);
+}
